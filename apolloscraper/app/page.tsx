@@ -22,7 +22,7 @@ const LandingPage = () => {
             <div className="mb-4 inline-flex items-center space-x-2">
               <div className="h-1 w-8 bg-[#FFD700]"></div>
               <span className="font-semibold text-[#00A693]">
-                AUTOMATION TOOL
+                Chrome Extension
               </span>
             </div>
             <h1 className="mb-6 text-4xl font-bold text-gray-900 md:text-6xl">
