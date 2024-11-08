@@ -33,11 +33,8 @@ const LandingPage = () => {
               </span>
             </div>
             <h1 className="mb-6 text-2xl font-bold text-gray-900 md:text-4xl lg:text-5xl">
-              Supercharge Your Lead Gen with the
-              <span className="text-[#00A693]">
-                {" "}
-                Apollo Lead Exporter Chrome Extension
-              </span>
+              Export Apollo Leads with
+              <span className="text-[#00A693]"> Our Chrome Extension</span>
             </h1>
             <p className="mb-8 text-lg text-gray-600">
               Stop wasting time with manual exports. Our Chrome extension
