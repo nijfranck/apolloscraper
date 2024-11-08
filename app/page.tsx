@@ -7,10 +7,10 @@ const LandingPage = () => {
       {/* Announcement Bar */}
       <div className="bg-[#00A693] p-3 text-center text-white">
         <span className="text-sm font-medium">
-          Get Lifetime License for just $49 - Limited Period Offer
+          Download Now - Lifetime Access for just $49
         </span>
         <button className="ml-4 rounded-full bg-[#FFD700] px-4 py-1 text-xs font-bold text-black hover:bg-yellow-400">
-          Buy Now
+          Get Extension
         </button>
       </div>
 
@@ -22,24 +22,29 @@ const LandingPage = () => {
             <div className="mb-4 inline-flex items-center space-x-2">
               <div className="h-1 w-8 bg-[#FFD700]"></div>
               <span className="font-semibold text-[#00A693]">
-                Chrome Extension
+                CHROME EXTENSION
               </span>
             </div>
             <h1 className="mb-6 text-4xl font-bold text-gray-900 md:text-6xl">
-              Apollo Lead
-              <span className="text-[#00A693]"> Scraper</span>
+              Supercharge Your
+              <span className="text-[#00A693]"> Apollo.io</span>
             </h1>
             <p className="mb-8 text-lg text-gray-600">
-              Save hours on Apollo.io by automating your lead generation process
+              Stop wasting time with manual exports. Our Chrome extension
+              bypasses Apollo's limits and automates your lead generation
+              process in seconds.
             </p>
             <div className="space-y-4">
               <button className="w-full rounded-lg bg-[#00A693] px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-teal-600 sm:w-auto">
-                Download Apollo Scraper Chrome Extension
+                Add to Chrome - $49 Lifetime
               </button>
+              <p className="text-sm text-gray-500">
+                One-time payment, unlimited usage
+              </p>
             </div>
           </div>
 
-          {/* Right Column */}
+          {/* Logo Section remains the same */}
           <div className="flex items-center justify-center">
             <div className="relative h-96 w-full">
               {/* Chrome Extension logo as base layer */}
@@ -86,12 +91,15 @@ const LandingPage = () => {
         </div>
       </div>
 
-      {/* How It Works Section */}
+      {/* How It Works Section - Updated descriptions */}
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="mb-12 text-center text-3xl font-bold text-gray-900">
-            How Apollo Lead Scraper Works?
+          <h2 className="mb-4 text-center text-3xl font-bold text-gray-900">
+            Install in Minutes
           </h2>
+          <p className="mb-12 text-center text-gray-600">
+            Quick setup, instant results. Start generating more leads today.
+          </p>
 
           <div className="grid gap-8 md:grid-cols-3">
             {steps.map((step, index) => (
@@ -117,14 +125,17 @@ const LandingPage = () => {
         </div>
       </div>
 
-      {/* Final CTA */}
+      {/* Final CTA - Updated for extension focus */}
       <div className="container mx-auto px-4 py-16 text-center">
         <div className="rounded-2xl bg-[#00A693] p-12">
-          <h2 className="mb-6 text-3xl font-bold text-white">
-            Buy a Lifetime License for just $49
+          <h2 className="mb-4 text-3xl font-bold text-white">
+            Ready to Scale Your Lead Generation?
           </h2>
+          <p className="mb-8 text-lg text-white opacity-90">
+            Join thousands of sales professionals already using our extension
+          </p>
           <button className="rounded-lg bg-[#FFD700] px-8 py-4 text-lg font-semibold text-black shadow-lg transition-all hover:bg-yellow-400">
-            Buy Now for Just $49
+            Download Extension - $49 Lifetime Access
           </button>
         </div>
       </div>
@@ -132,12 +143,12 @@ const LandingPage = () => {
   );
 };
 
-// Features and steps data remain the same as before
+// Updated Features data
 const features = [
   {
-    title: "Bypass Export Limit",
+    title: "No More Limits",
     description:
-      "No more 25 selection limit. Get unlimited leads from your Apollo.io searches.",
+      "Break free from Apollo's 25 contact export limit. Export unlimited leads with one click.",
     icon: (
       <svg
         className="h-6 w-6"
@@ -155,9 +166,9 @@ const features = [
     ),
   },
   {
-    title: "Export Data Faster",
+    title: "10x Faster Exports",
     description:
-      "Manual exports are time-consuming. Our tool automates the entire process.",
+      "What takes hours manually now takes minutes. Automated scraping saves you precious time.",
     icon: (
       <svg
         className="h-6 w-6"
@@ -175,9 +186,9 @@ const features = [
     ),
   },
   {
-    title: "100% Automated",
+    title: "One-Click Export",
     description:
-      "Set your parameters and let our extension handle the rest automatically.",
+      "Set your parameters once and let the extension handle everything automatically.",
     icon: (
       <svg
         className="h-6 w-6"
@@ -195,9 +206,9 @@ const features = [
     ),
   },
   {
-    title: "Save Time & Costs",
+    title: "Lifetime Access",
     description:
-      "Maximize your efficiency and reduce manual work with automated scraping.",
+      "One-time payment of $49. No subscriptions, no hidden fees, unlimited usage forever.",
     icon: (
       <svg
         className="h-6 w-6"
@@ -215,6 +226,8 @@ const features = [
     ),
   },
 ];
+
+// Steps data remains largely the same, but with clearer instructions
 
 // Steps data remains the same
 const steps = [
