@@ -37,9 +37,7 @@ const LandingPage = () => {
               <span className="text-[#00A693]"> Our Chrome Extension</span>
             </h1>
             <p className="mb-8 text-lg text-gray-600">
-              Stop wasting time with manual exports. Our Chrome extension
-              bypasses Apollo&apos;s limits and automates your lead generation
-              process in seconds.
+              Bypass Apollo&apos;s limits. Export unlimited leads instantly.
             </p>
             <div className="flex flex-col items-start space-y-2">
               <div className="flex flex-col space-y-2">
