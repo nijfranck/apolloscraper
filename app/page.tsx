@@ -29,7 +29,7 @@ const LandingPage = () => {
             <div className="mb-4 inline-flex items-center space-x-2">
               <div className="h-1 w-8 bg-[#FFD700]"></div>
               <span className="font-semibold text-[#00A693]">
-                Apollo Lead Exporter - Chrome Extension
+                Export Apollo Leads - Chrome Extension
               </span>
             </div>
             <h1 className="mb-6 text-2xl font-bold text-gray-900 md:text-4xl lg:text-5xl">
