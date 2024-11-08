@@ -22,8 +22,8 @@ const LandingPage = () => {
       </div>
 
       {/* Hero Section */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
+      <div className="container mx-auto px-6 py-16">
+        <div className="grid gap-4 lg:grid-cols-2 lg:gap-8">
           {/* Left Column */}
           <div className="flex flex-col justify-center">
             <div className="mb-4 inline-flex items-center space-x-2">
