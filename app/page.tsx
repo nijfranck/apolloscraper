@@ -151,8 +151,8 @@ const LandingPage = () => {
                     <span className="text-gray-400">Sales Manager</span>
                   </div>
                   <p className="mt-1">
-                    "Saved me 4 hours per day on lead generation. Best
-                    investment for my sales workflow."
+                    &quot;Saved me 4 hours per day on lead generation. Best
+                    investment for my sales workflow.&quot;
                   </p>
                 </div>
               </div>
