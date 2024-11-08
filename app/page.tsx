@@ -41,17 +41,39 @@ const LandingPage = () => {
               bypasses Apollo&apos;s limits and automates your lead generation
               process in seconds.
             </p>
-            <div className="space-y-6">
-              <Link href="https://buy.stripe.com/9AQ9DN9Krerr8FyfZm">
-                <button className="w-full rounded-lg bg-[#00A693] px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-teal-600 sm:w-auto">
-                  Add to Chrome - $49 Lifetime
-                </button>
-              </Link>
-              <p className="text-sm text-gray-500">
-                One-time payment, unlimited usage
-              </p>
-
-              {/* Social Proof Section */}
+            <div className="flex flex-col items-start space-y-2">
+              <div className="flex flex-col space-y-2">
+                <div className="relative inline-flex">
+                  <Link href="https://buy.stripe.com/9AQ9DN9Krerr8FyfZm">
+                    <button className="w-full rounded-lg bg-[#00A693] px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-teal-600 sm:w-auto">
+                      Add to Chrome for{" "}
+                      <span className="line-through mr-2 opacity-70 ">$79</span>
+                      $49
+                    </button>
+                  </Link>
+                  <div className="absolute -right-2 -top-3 z-10">
+                    <div className="flex items-center justify-center rounded-full bg-yellow-400 px-3 py-1 text-sm font-bold text-black shadow-md">
+                      Save $30
+                    </div>
+                  </div>
+                </div>
+                <span className="flex items-center text-sm text-gray-600">
+                  <svg
+                    className="mr-1.5 h-4 w-4 text-[#00A693]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  One-time payment, unlimited usage forever
+                </span>
+              </div>
               <div className="flex flex-col space-y-4">
                 {/* Trust Indicators */}
                 <div className="flex items-center space-x-4">
@@ -157,6 +179,8 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
+
+            {/* Social Proof Section */}
           </div>
 
           {/* Logo Section remains the same */}
