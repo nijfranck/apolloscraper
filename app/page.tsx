@@ -31,7 +31,7 @@ const LandingPage = () => {
             </h1>
             <p className="mb-8 text-lg text-gray-600">
               Stop wasting time with manual exports. Our Chrome extension
-              bypasses Apollo's limits and automates your lead generation
+              bypasses Apollo&apos;s limits and automates your lead generation
               process in seconds.
             </p>
             <div className="space-y-4">
@@ -247,7 +247,7 @@ const steps = [
   {
     title: "Run the Chrome Extension",
     description:
-      "Once the Chrome Extension is installed, open Apollo, go to Search > People and apply the required filters. Click on 'Net New' tab and open the Apollo Lead Scraper Chrome extension. Enter the number of pages to scrape along with the 'Name of the list'. Then click 'Start' and wait until it finishes the task. For best performance, limit scraping to a maximum of 50 pages at once.",
+      "Once the Chrome Extension is installed, open Apollo, go to Search > People and apply the required filters. Click on 'Net New' tab and open the Apollo Contact Scraper Chrome extension. Press 'Scrape all Pages' on the extension popup. Then wait until it finishes the task. When it is finished, you will be prompted to download the CSV. For best performance, limit scraping to a maximum of 50 pages at once.",
     icon: <PlayCircle className="h-6 w-6" />,
   },
 ];
