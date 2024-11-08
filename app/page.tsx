@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { Play, Download, Chrome, PlayCircle } from "lucide-react";
 
 const LandingPage = () => {
@@ -6,12 +8,17 @@ const LandingPage = () => {
     <div className="min-h-screen bg-white">
       {/* Announcement Bar */}
       <div className="bg-[#00A693] p-3 text-center text-white">
-        <span className="text-sm font-medium">
+        <Link
+          href="https://buy.stripe.com/9AQ9DN9Krerr8FyfZm"
+          className="text-sm font-medium"
+        >
           Download Now - Lifetime Access for just $49
-        </span>
-        <button className="ml-4 rounded-full bg-[#FFD700] px-4 py-1 text-xs font-bold text-black hover:bg-yellow-400">
-          Get Extension
-        </button>
+        </Link>
+        <Link href="https://buy.stripe.com/9AQ9DN9Krerr8FyfZm">
+          <button className="ml-4 rounded-full bg-[#FFD700] px-4 py-1 text-xs font-bold text-black hover:bg-yellow-400">
+            Get Extension
+          </button>
+        </Link>
       </div>
 
       {/* Hero Section */}
@@ -34,13 +41,121 @@ const LandingPage = () => {
               bypasses Apollo&apos;s limits and automates your lead generation
               process in seconds.
             </p>
-            <div className="space-y-4">
-              <button className="w-full rounded-lg bg-[#00A693] px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-teal-600 sm:w-auto">
-                Add to Chrome - $49 Lifetime
-              </button>
+            <div className="space-y-6">
+              <Link href="https://buy.stripe.com/9AQ9DN9Krerr8FyfZm">
+                <button className="w-full rounded-lg bg-[#00A693] px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-teal-600 sm:w-auto">
+                  Add to Chrome - $49 Lifetime
+                </button>
+              </Link>
               <p className="text-sm text-gray-500">
                 One-time payment, unlimited usage
               </p>
+
+              {/* Social Proof Section */}
+              <div className="flex flex-col space-y-4">
+                {/* Trust Indicators */}
+                <div className="flex items-center space-x-4">
+                  <div className="flex -space-x-2">
+                    {/* User Avatars - using placeholder images */}
+                    {[1, 2, 3, 4].map((i) => (
+                      <div
+                        key={i}
+                        className="relative h-8 w-8 rounded-full border-2 border-white bg-gray-200"
+                        aria-hidden="true"
+                      >
+                        <Image
+                          src={`/testimonials/profile${i + 1}.png`}
+                          alt=""
+                          layout="fill"
+                          className="rounded-full"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    <span className="font-semibold">Join 2,000+ users</span>{" "}
+                    already saving time
+                  </div>
+                </div>
+
+                {/* Trust Badges */}
+                <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500">
+                  <div className="flex items-center">
+                    <svg
+                      className="mr-1.5 h-4 w-4 text-yellow-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    4.9/5 rating
+                  </div>
+                  <div className="flex items-center">
+                    <svg
+                      className="mr-1.5 h-4 w-4 text-[#00A693]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    Instant Setup
+                  </div>
+                  <div className="flex items-center">
+                    <svg
+                      className="mr-1.5 h-4 w-4 text-[#00A693]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                      />
+                    </svg>
+                    Secure payment
+                  </div>
+                </div>
+
+                {/* Recent Activity */}
+                <div className="flex items-center text-sm text-gray-500">
+                  <div className="relative mr-2 h-2 w-2">
+                    <div className="absolute h-2 w-2 rounded-full bg-green-400"></div>
+                    <div className="absolute h-2 w-2 animate-ping rounded-full bg-green-400"></div>
+                  </div>
+                  <span>
+                    <span className="font-medium">28 people</span> downloaded in
+                    the last 24 hours
+                  </span>
+                </div>
+
+                {/* Mini Testimonial */}
+                <div className="rounded-lg bg-gray-50 p-3 text-sm text-gray-600">
+                  <div className="flex items-center">
+                    <svg
+                      className="mr-1 h-3 w-3 text-yellow-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <span className="font-medium">John D.</span>
+                    <span className="mx-2">·</span>
+                    <span className="text-gray-400">Sales Manager</span>
+                  </div>
+                  <p className="mt-1">
+                    "Saved me 4 hours per day on lead generation. Best
+                    investment for my sales workflow."
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -134,9 +249,11 @@ const LandingPage = () => {
           <p className="mb-8 text-lg text-white opacity-90">
             Join thousands of sales professionals already using our extension
           </p>
-          <button className="rounded-lg bg-[#FFD700] px-8 py-4 text-lg font-semibold text-black shadow-lg transition-all hover:bg-yellow-400">
-            Download Extension - $49 Lifetime Access
-          </button>
+          <Link href="https://buy.stripe.com/9AQ9DN9Krerr8FyfZm">
+            <button className="rounded-lg bg-[#FFD700] px-8 py-4 text-lg font-semibold text-black shadow-lg transition-all hover:bg-yellow-400">
+              Download Extension - $49 Lifetime Access
+            </button>
+          </Link>
         </div>
       </div>
     </div>
