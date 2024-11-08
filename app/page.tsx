@@ -29,12 +29,15 @@ const LandingPage = () => {
             <div className="mb-4 inline-flex items-center space-x-2">
               <div className="h-1 w-8 bg-[#FFD700]"></div>
               <span className="font-semibold text-[#00A693]">
-                CHROME EXTENSION
+                Apollo Lead Exporter - Chrome Extension
               </span>
             </div>
-            <h1 className="mb-6 text-4xl font-bold text-gray-900 md:text-6xl">
-              Supercharge Your
-              <span className="text-[#00A693]"> Apollo.io</span>
+            <h1 className="mb-6 text-2xl font-bold text-gray-900 md:text-4xl lg:text-5xl">
+              Supercharge Your Lead Gen with the
+              <span className="text-[#00A693]">
+                {" "}
+                Apollo Lead Exporter Chrome Extension
+              </span>
             </h1>
             <p className="mb-8 text-lg text-gray-600">
               Stop wasting time with manual exports. Our Chrome extension
